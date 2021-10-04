@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ScrollSpy pagination overlay imageview</title>
+        <link rel="stylesheet" href="pagestyle.css">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="active" href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#pagination">pagination</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#overlay">Overlay</a>
+            </nav>
+        </header>
+        <section id="home"><h1>Revel Element On Scroll</h1></section>
+    
+        <section id="about">
+            <div class="container reveal"><h2>about</h2>
+        <div class="cards">
+            <div class="text-card">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, culpa ullam aut voluptatem neque provident veniam odio soluta qui vitae, eaque, explicabo sunt necessitatibus perferendis ipsa laborum dignissimos! Ipsam, repudiandae!</p>
+            </div>
+            <div class="text-card">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, culpa ullam aut voluptatem neque provident veniam odio soluta qui vitae, eaque, explicabo sunt necessitatibus perferendis ipsa laborum dignissimos! Ipsam, repudiandae!</p>
+        </div>
+        <div class="text-card">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, culpa ullam aut voluptatem neque provident veniam odio soluta qui vitae, eaque, explicabo sunt necessitatibus perferendis ipsa laborum dignissimos! Ipsam, repudiandae!</p>
+    </div>
+        </div>
+    
+    </div>
+</section>
+        <section id="pagination" class="pagination">
+            <div class="container">
+                <div><h3 style="color: rgb(67, 96, 221); text-align: center;">Name List</h3></div> 
+                <br>
+                <div class="table-list" >
+                    <table >
+                       <tbody id="listing-table">
+                       </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p>
+                        <a href="#" id="btn-prev">Prev</a>
+                        <a href="#" id="btn-next">Next</a>
+                    </p>
+                    <p>Page <span id="page"></span></p>
+                </div>
+             </div>
+        </section>
+        <section id="gallery">
+            <input type="file" id="image_input" accept="image/jpg , image/png , image/jpeg">
+            <div id="display_image"></div>
+        </section>
+        <section id="overlay">
+            <div class="imagecontainer">
+                <img src="nature.jpg" alt="Avatar" class="image">
+                <div class="overlay"> In nature, nothing is perfect and everything is perfect.</div>
+              </div>
+        </section>
+        <script src="./pagescript.js"></script>
+        </script>
+    </body>
+</html>
